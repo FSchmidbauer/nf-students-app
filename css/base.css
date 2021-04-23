@@ -92,11 +92,16 @@ footer {
   padding: 1.25rem;
   width: 100%;
   z-index: 100;
-  border: 1px solid red;
 }
 
-ul {
-  background-color: mistyrose;
+.iconbox {
+  background-color: white;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 2.75rem;
 }
 
 .bold-16 {
@@ -165,17 +170,16 @@ h3 {
 }
 
 .rounded {
-  border-radius: 1rem;
+  border-radius: 0.375rem;
   border: 1px solid var(--border-light);
 }
 
 .topitem {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 0.375rem 0.375rem 0 0;
 }
 
 .bottomitem {
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 0.375rem 0.375rem;
 }
 
 .plus {
@@ -236,4 +240,8 @@ h3 {
 
 .disabled {
   opacity: 0.1;
+}
+
+.iconbox__item--disabled {
+  opacity: 0.5;
 }
