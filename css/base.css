@@ -66,13 +66,22 @@ body {
 }
 
 header {
+  background-image: url("../images/background_shape_1.svg");
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.387rem;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 main {
   padding: 1.875rem;
+  padding-top: 4rem;
 }
 
 footer {
@@ -184,7 +193,7 @@ h3 {
   font-weight: 600;
   color: var(--primary);
   text-align: center;
-  padding: 1.125rem 5rem;
+  padding: 1.125rem 0;
 }
 
 .journalcard {
