@@ -1,3 +1,20 @@
 :root {
-  --primary: #193251;
+  --primary-dark: hsl(213, 53%, 21%);
+  --primary: hsl(213, 19%, 55%);
+  --primary-light: hsl(210, 15%, 89%);
+  --primary-lightest: hsl(0, 0%, 97%);
+  --secondary-dark: hsl(11, 100%, 61%);
+  --secondary: hsl(11, 100%, 76%);
+  --secondary-light: hsl(11, 100%, 84%);
+  --secondary-lightest: hsl(11, 100%, 92%);
+  --border-light: hsl(210, 15%, 89%);
+  --border-dark: hsl(213, 19%, 55%);
+}
+
+.shadow-grey {
+  filter: drop-shadow(0 0 0.75rem hsl(213, 53%, 21%));
+}
+
+.shadow-red {
+  filter: drop-shadow(0 0 0.75 hsl(11, 100%, 61%));
 }
