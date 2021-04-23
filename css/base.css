@@ -68,7 +68,6 @@ body {
 header {
   background-image: url("../images/background_shape_1.svg");
   background-size: contain;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,12 +81,22 @@ header {
 main {
   padding: 1.875rem;
   padding-top: 4rem;
+  padding-bottom: 5rem;
+  xposition: absolute;
+  xbottom: 5rem;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  margin: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  z-index: 100;
+  border: 1px solid red;
+}
+
+ul {
+  background-color: mistyrose;
 }
 
 .bold-16 {
