@@ -1,0 +1,153 @@
+:root {
+  --primary-dark: hsl(213, 53%, 21%);
+  --primary: hsl(213, 19%, 55%);
+  --primary-light: hsl(210, 15%, 89%);
+  --primary-lightest: hsl(0, 0%, 97%);
+  --secondary-dark: hsl(11, 100%, 61%);
+  --secondary: hsl(11, 100%, 76%);
+  --secondary-light: hsl(11, 100%, 84%);
+  --secondary-lightest: hsl(11, 100%, 92%);
+  --border-light: hsl(210, 15%, 89%);
+  --border-dark: hsl(213, 19%, 55%);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 2rem;
+}
+
+.energy__table {
+  display: grid;
+  grid-template-columns: 50px, auto;
+  grid-template-rows: repeat(6, auto);
+  margin: 1rem 4rem;
+  row-gap: 1rem;
+  text-align: center;
+  align-items: end;
+}
+
+.status100 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.status75 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.status50 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.status25 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.status0 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.time10 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.time15 {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.time16 {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+.time18 {
+  grid-column: 5;
+  grid-row: 6;
+}
+
+.time19 {
+  grid-column: 6;
+  grid-row: 6;
+}
+
+.energy__bars {
+  display: flex;
+  grid-column: 2;
+  grid-row: 6/1;
+}
+
+.energy__bar {
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  width: 12px;
+  height: 175px;
+}
+
+.energy__bar:nth-child(even) {
+  background-color: var(--primary-dark);
+  margin-right: 2rem;
+}
+
+.energy__bar:nth-child(odd) {
+  background-color: var(--secondary-dark);
+}
+
+.energy__descr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.energy__descrblue {
+  background-color: var(--primary-dark);
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.energy__descrorange {
+  background-color: var(--secondary-lightest);
+  border-radius: 5px;
+  color: var(--secondary-dark);
+  padding: 0.5rem;
+}
+
+.energy__level {
+  border-radius: 5px;
+  margin: 1rem 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.colorg100 {
+  background-color: var(--secondary-dark);
+  color: white;
+}
+
+.colorg75 {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.colorg50 {
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
+}
+
+.colorg25 {
+  background-color: var(--secondary-lightest);
+  color: var(--secondary-dark);
+}

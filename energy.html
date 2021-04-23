@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./energy.css">
 </head>
 <body>
     <header>
@@ -14,45 +14,41 @@
     <main>
         <h2>Energy Level throughout the day</h2>
         <section class="energy__table">
-            <section class="energy__statuses">
                 <section class="energy__status status100">100</section>
                 <section class="energy__status status75">75</section>
                 <section class="energy__status status50">50</section>
                 <section class="energy__status status25">25</section>
                 <section class="energy__status status0">0</section>
-            </section>
-            <section class="energy__times">
                 <section class="energy__time time10">10:00</section>
                 <section class="energy__time time15">15:30</section>
                 <section class="energy__time time16">16:15</section>
                 <section class="energy__time time18">18:25</section>
                 <section class="energy__time time19">19:00</section>
-            </section>
             <!--Hier bitte Farbe nicht über die Classes, sondern über die
             Hilfsklasse nth-child odd, even definieren-->
             <section class="energy__bars">
-                <section class="energy__bar 10orangebar"></section>
-                <section class="energy__bar 10bluebar"></section>
-                <section class="energy__bar 15orangebar"></section>
-                <section class="energy__bar 15bluebar"></section>
-                <section class="energy__bar 16orangebar"></section>
-                <section class="energy__bar 16bluebar"></section>
-                <section class="energy__bar 18orangebar"></section>
-                <section class="energy__bar 18bluebar"></section>
-                <section class="energy__bar 19orangebar"></section>
-                <section class="energy__bar 19bluebar"></section>
-            </section>
+                <section class="energy__bar bar10 orangebar10"></section>
+                <section class="energy__bar bar10 bluebar10"></section>
+                <!--<section class="energy__bar bar15 orangebar15"></section>
+                <section class="energy__bar bar15 bluebar15"></section>
+                <section class="energy__bar bar16 orangebar16"></section>
+                <section class="energy__bar bar16 bluebar16"></section>
+                <section class="energy__bar bar18 orangebar18"></section>
+                <section class="energy__bar bar18 bluebar18"></section>
+                <section class="energy__bar bar19 orangebar19"></section>
+                <section class="energy__bar bar19 bluebar19"></section>
+                --></section>
         </section>
+            <section class="energy__descr">
+                <p class="energy__descrblue">Other Students</p>
+                <p class="energy__descrorange">You</p>
+            </section>
         <h2>Rate your current energy level:</h2>
         <section class="energy__levels">
             <section class="energy__level colorg100">100%</section>
             <section class="energy__level colorg75">75%</section>
             <section class="energy__level colorg50">50%</section>
             <section class="energy__level colorg25">25%</section>
-        </section>
-        <section class="energy__descriptions">
-            <p class="energy__description">Other Students</p>
-            <p class="energy__description">You</p>
         </section>
     </main>
     <footer>
