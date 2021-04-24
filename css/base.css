@@ -64,6 +64,9 @@ main {
   padding-bottom: 5rem;
   xposition: absolute;
   xbottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* .bold-16 {
