@@ -17,3 +17,7 @@ footer {
 .iconbox__item--disabled {
   opacity: 0.5;
 }
+
+#JournalIcon {
+  fill: #0000ff !important;
+}
