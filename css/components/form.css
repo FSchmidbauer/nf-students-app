@@ -1,5 +1,7 @@
 textarea {
   resize: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .form__buttons {
