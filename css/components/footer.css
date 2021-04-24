@@ -14,10 +14,18 @@ footer {
   justify-content: space-evenly;
   height: 2.75rem;
 }
-.iconbox__item--disabled {
+.iconbox__item--disabled > img {
   opacity: 0.5;
 }
 
-object {
-  fill: #0000ff;
+.iconbox__item svg path {
+  fill: var(--primary-dark);
+}
+
+.iconbox__item--disabled svg path {
+  fill: var(--primary);
+}
+
+.iconbox__item--disabled:hover svg path {
+  fill: var(--secondary-dark);
 }
