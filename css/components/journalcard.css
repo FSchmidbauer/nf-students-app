@@ -1,6 +1,7 @@
 .journalcard {
   background: white;
   padding: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .journalcard__stars {

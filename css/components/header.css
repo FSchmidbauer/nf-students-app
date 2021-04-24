@@ -2,6 +2,7 @@ header {
   background-image: url("../../images/background_shape_1.svg");
   background-size: contain;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 3.387rem;
