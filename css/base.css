@@ -10,15 +10,8 @@
   --border-light: hsl(210, 15%, 89%);
   --border-dark: hsl(213, 19%, 55%);
 
-  --ff-sans: sans-serif;
+  --ff-sans: "Open Sans", sans-serif;
   --ff-serif: serif;
-
-  /* --fs-200: 0.75rem;
-  --fs-300: 1rem;
-  --fs-400: 1.25rem;
-  --fs-500: 1.375rem;
-  --fs-600: 1.75rem;
-  --fs-900: 2.125rem; */
 }
 
 *,
@@ -38,8 +31,8 @@ p {
 ul[class],
 ol[class] {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul[class] li,
@@ -49,9 +42,9 @@ ol[class] li {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 body {
@@ -59,13 +52,9 @@ body {
 }
 
 main {
-  padding: 1.875rem;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  xposition: absolute;
-  xbottom: 5rem;
   display: flex;
   flex-direction: column;
+  padding: 4rem 1.875rem 5rem 1.875rem;
 }
 
 a {
@@ -73,77 +62,78 @@ a {
 }
 
 .bold-16 {
+  color: var(--primary-dark);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.125;
-  color: var(--primary-dark);
   text-align: center;
 }
 
 .semibold-16 {
+  color: var(--primary-dark);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1;
-  color: var(--primary-dark);
   text-align: center;
 }
 
 .semibold-16-light {
+  color: var(--primary);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--primary);
   text-align: center;
 }
 
 .semibold-14-uppercase {
+  color: var(--primary-dark);
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.286;
-  color: var(--primary-dark);
   text-transform: uppercase;
 }
 
 .semibold-14 {
+  color: var(--primary-dark);
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.143;
-  color: var(--primary-dark);
 }
 
 .regular-12 {
+  color: var(--primary);
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.333;
-  color: var(--primary);
 }
 
 .regular-14 {
+  color: var(--primary-dark);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.429;
-  color: var(--primary-dark);
 }
 
 h1 {
+  color: var(--primary-dark);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.125;
-  color: var(--primary-dark);
+  margin-top: 1rem;
   text-align: center;
 }
 
 h2 {
+  color: var(--primary-dark);
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.143;
-  color: var(--primary-dark);
   margin-bottom: 0.625rem;
 }
 
 h3 {
-  margin-bottom: 0.625rem;
+  color: var(--primary);
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.333;
-  color: var(--primary);
+  margin-bottom: 0.625rem;
 }
