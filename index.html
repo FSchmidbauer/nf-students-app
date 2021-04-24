@@ -9,59 +9,62 @@
   </head>
   <body>
     <header>
-      <h1>DASHBOARD</h1>
+      <h1>Dashboard</h1>
     </header>
     <main>
-        <h2>Your Code Body for Today:</h2>
-      <section>
-        <section class="member">Sabrina Müller</section>
-        <img src="./images/plus@2x.png" alt="Plus-Zeichen" class="member__plus">
-        <section class="member">Florian Schmidbauer</section>
-      </section>
+      <h2>Your Code Buddy for Today:</h2>
+      <section class="memberbox">
+        <div class="memberbox__pair">
+      <section class="memberbox__item topitem">Sabrina Müller</section>
+      <div class="plus"><img src="./images/Plus@2x.png" alt="plus sign"></div>
+        <section class="memberbox__item bottomitem">Florian Schmidbauer</section>
+      </div>
+      </section> 
+      <section class="memberbox">
         <h2>Your Current Team:</h2>
-      <section>
-        <section class="member">Sabrina Müller</section>
-        <section class="member">Florian Schmidbauer</section>
-        <section class="member">Jens Dreske</section>
-        <section class="member">Borjan Popovic</section>
+        <section class="memberbox__item topitem">Sabrina Müller</section>
+        <section class="memberbox__item">Florian Schmidbauer</section>
+        <section class="memberbox__item">Jens Dreske</section>
+        <section class="memberbox__item bottomitem">Borjan Popovic</section>
       </section>
         <h2>Yesterday's Journal:</h2>
-        <section class="journalcard">
+      <section>
+        <section class="journalcard rounded shadow-grey">
           <h3>Rating:</h3>
           <section class="journalcard__stars">
-              <img src="./images/star.png" alt="Star Icon" class="journalcard__star">
-              <img src="./images/star.png" alt="Star Icon" class="journalcard__star">
-              <img src="./images/star.png" alt="Star Icon" class="journalcard__star">
-              <img src="./images/star.png" alt="Star Icon" class="journalcard__star disabled">
-              <img src="./images/star.png" alt="Star Icon" class="journalcard__star disabled">
-            </section>
+              <img src="./images/Star.png" alt="Star Icon" class="journalcard__star">
+              <img src="./images/Star.png" alt="Star Icon" class="journalcard__star">
+              <img src="./images/Star.png" alt="Star Icon" class="journalcard__star">
+              <img src="./images/Star.png" alt="Star Icon" class="journalcard__star disabled">
+              <img src="./images/Star.png" alt="Star Icon" class="journalcard__star disabled">
+            </section>         
             <h3>Comprehension:</h3>
           <section class="journalcard__rectangles">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
-              <img src="./images/rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
+              <img src="./images/Rectangle.png" alt="Rectangle Icon" class="journalcard__rectangle disabled">
             </section>
             <h3>Motto:</h3>
             <p class="journalcard__motto">"That's life in the city"</p>
             <h3>Notes:</h3>
             <p class="journalcard__notes">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil non similique illum aperiam totam cum tempore adipisci esse, impedit itaque!</p>
-        </section>
+      </section>
     </main>
   <footer>
-      <nav class="footernav">
-        <a href="index.html" class="footernav__element"><img src="./images/Dashboardicon@2x.png" alt="Dashboard Icon" class="footernav__image--active"></a>
-        <a href="code-buddies.html" class="footernav__element"><img src="./images/Buddyicon@2x.png" alt="Couple Icon" class="footernav__image"></a>
-        <a href="teams.html" class="footernav__element"><img src="./images/Teamicon@2x.png" alt="Group Icon" class="footernav__image"></a>
-        <a href="energy.html" class="footernav__element"><img src="./images/Energyicon@2x.png" alt="Energy Icon" class="footernav__image"></a>
-        <a href="journal.html" class="footernav__element"><img src="./images/Journalicon@2x.png" alt="Journal Icon" class="footernav__image"></a>
-        </nav>
+<ul class="iconbox rounded shadow-grey">
+  <li class="iconbox__item"><a href="./index.html"><img src="./images/DashboardIcon.svg" alt="dashicon"></a></li>
+  <li class="iconbox__item iconbox__item--disabled"><a href="./code-buddies.html"><img src="./images/BuddyIcon.svg" alt="buddyicon"></a></li>
+  <li class="iconbox__item iconbox__item--disabled"><a href="./teams.html"><img src="./images/TeamIcon.svg" alt="teamicon"></a></li>
+  <li class="iconbox__item iconbox__item--disabled"><a href="./energy.html"><img src="./images/EnergyIcon.svg" alt="energyicon"></a></li>
+  <li class="iconbox__item iconbox__item--disabled"><a href="./journal.html"><img src="./images/JournalIcon.svg " alt="journalicon"></a></li>
+</ul>
   </footer>
   </body>
 </html>
