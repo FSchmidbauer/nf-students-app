@@ -41,14 +41,14 @@ ol[class] li {
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 img {
   display: block;
   height: auto;
   max-width: 100%;
-}
-
-body {
-  font-family: "Open Sans";
 }
 
 main {
@@ -59,6 +59,31 @@ main {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: var(--primary-dark);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.125;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-dark);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.143;
+  margin-bottom: 0.625rem;
+}
+
+h3 {
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.333;
+  margin-bottom: 0.625rem;
 }
 
 .bold-16 {
@@ -111,29 +136,4 @@ a {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.429;
-}
-
-h1 {
-  color: var(--primary-dark);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.125;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-h2 {
-  color: var(--primary-dark);
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.143;
-  margin-bottom: 0.625rem;
-}
-
-h3 {
-  color: var(--primary);
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.333;
-  margin-bottom: 0.625rem;
 }
