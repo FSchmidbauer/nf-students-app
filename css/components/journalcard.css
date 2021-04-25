@@ -1,5 +1,6 @@
 .journalcard {
   background: white;
+  margin-bottom: 1.25rem;
   padding: 1.25rem;
 }
 
@@ -7,22 +8,22 @@
   display: flex;
   justify-content: space-between;
   height: 1.5rem;
-  width: 12.8rem;
   margin-bottom: 1.315rem;
+  width: 12.8rem;
 }
 
 .journalcard__rectangles {
   display: flex;
   justify-content: space-between;
   height: 1.375rem;
-  width: 17.125rem;
   margin-bottom: 1.315rem;
+  width: 17.125rem;
 }
 
 .journalcard__motto {
+  line-height: 1;
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1;
   color: var(--primary-dark);
   margin-bottom: 1.25rem;
 }
@@ -32,4 +33,24 @@
   font-weight: 400;
   line-height: 1.429;
   color: var(--primary-dark);
+}
+
+.journalcard__ratebutton {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-dark);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 12.5rem;
+}
+
+.journalcard__ratebutton img {
+  margin-left: 0.5rem;
 }
