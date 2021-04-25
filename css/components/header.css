@@ -16,3 +16,8 @@ header {
   width: 100%;
   z-index: 100;
 }
+
+.header__doublespace {
+  height: 5.063rem;
+  justify-content: flex-start;
+}
