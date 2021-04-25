@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energy</title>
-    <link rel="stylesheet" href="./energy.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <h1>ENERGY</h1>
     </header>
     <main>
-      <h2>Energy Level throughout the day</h2>
+      <h2 class="mt-2">Energy Level throughout the day</h2>
       <section class="energychart">
         <section class="energychart__status100">100</section>
         <section class="energychart__status75">75</section>
@@ -56,8 +56,8 @@
         <p class="energychart__descrblue">Other Students</p>
         <p class="energychart__descrorange">You</p>
       </section>
-      <h2>Rate your current energy level:</h2>
       <section>
+        <h2>Rate your current energy level:</h2>
         <section class="energy__level colorg100">100%</section>
         <section class="energy__level colorg75">75%</section>
         <section class="energy__level colorg50">50%</section>
@@ -65,38 +65,33 @@
       </section>
     </main>
     <footer>
-      <nav class="footernav">
-        <a href="index.html" class="footernav__element"
-          ><img
-            src="./images/Dashboardicon@2x.png"
-            alt="Dashboard Icon"
-            class="footernav__image"
-        /></a>
-        <a href="code-buddies.html" class="footernav__element"
-          ><img
-            src="./images/Buddyicon@2x.png"
-            alt="Couple Icon"
-            class="footernav__image"
-        /></a>
-        <a href="teams.html" class="footernav__element"
-          ><img
-            src="./images/Teamicon@2x.png"
-            alt="Group Icon"
-            class="footernav__image"
-        /></a>
-        <a href="energy.html" class="footernav__element"
-          ><img
-            src="./images/Energyicon@2x.png"
-            alt="Energy Icon"
-            class="footernav__image--active"
-        /></a>
-        <a href="journal.html" class="footernav__element"
-          ><img
-            src="./images/Journalicon@2x.png"
-            alt="Journal Icon"
-            class="footernav__image"
-        /></a>
-      </nav>
+      <ul class="iconbox rounded shadow-grey">
+        <li class="iconbox__item iconbox__item--disabled">
+          <a href="./index.html"
+            ><img src="./images/DashboardIcon.svg" alt="dashicon"
+          /></a>
+        </li>
+        <li class="iconbox__item iconbox__item--disabled">
+          <a href="./code-buddies.html"
+            ><img src="./images/BuddyIcon.svg" alt="buddyicon"
+          /></a>
+        </li>
+        <li class="iconbox__item iconbox__item--disabled">
+          <a href="./teams.html"
+            ><img src="./images/TeamIcon.svg" alt="teamicon"
+          /></a>
+        </li>
+        <li class="iconbox__item">
+          <a href="./energy.html"
+            ><img src="./images/EnergyIcon.svg" alt="energyicon"
+          /></a>
+        </li>
+        <li class="iconbox__item iconbox__item--disabled">
+          <a href="./journal.html"
+            ><img src="./images/JournalIcon.svg " alt="journalicon"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
