@@ -5,14 +5,13 @@ header {
   justify-content: center;
   position: fixed;
   top: 0;
-  background-image: url("../../images/background_shape_1.svg");
-  padding-bottom: 1rem;
+  background-image: url("../../images/background_shape_1_omg.svg");
 
   /* cover only works on svg viewport, content does not get stretched, even with preserveAspectRatio="none" in .svg */
   background-size: cover;
   background-position: bottom;
 
-  height: 3.687rem;
+  padding-bottom: 1rem;
   width: 100%;
   z-index: 100;
 }
