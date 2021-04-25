@@ -27,5 +27,5 @@ footer {
 }
 
 .iconbox__item--disabled:hover svg path {
-  fill: var(--secondary-dark);
+  fill: var(--secondary);
 }
