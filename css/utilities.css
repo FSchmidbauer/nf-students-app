@@ -2,12 +2,16 @@
   opacity: 0.1;
 }
 
+.mt-025 {
+  margin-top: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 2rem;
 }
 
-.mt-025 {
-  margin-top: 0.25rem;
+.pdt-21 {
+  padding-top: 2.125rem;
 }
 
 .rounded {
