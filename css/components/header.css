@@ -8,7 +8,7 @@ header {
   background-image: url("../../images/background_shape_1_omg.svg");
 
   /* cover only works on svg viewport, content does not get stretched, even with preserveAspectRatio="none" in .svg */
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: bottom;
 
   padding-bottom: 1rem;
