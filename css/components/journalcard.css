@@ -7,17 +7,25 @@
 .journalcard__stars {
   display: flex;
   justify-content: space-between;
-  height: 1.5rem;
+
   margin-bottom: 1.315rem;
   width: 12.8rem;
+}
+
+.journalcard__star {
+  height: 1.5rem;
 }
 
 .journalcard__rectangles {
   display: flex;
   justify-content: space-between;
-  height: 1.375rem;
+
   margin-bottom: 1.315rem;
   width: 17.125rem;
+}
+
+.journalcard__rectangle {
+  height: 1.375rem;
 }
 
 .journalcard__motto {

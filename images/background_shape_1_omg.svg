@@ -1,0 +1,11 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 375 59"
+  preserveAspectRatio="none"
+>
+  <path
+    fill="#F8F8F8"
+    fill-rule="evenodd"
+    d="M0 53c17.4-.7 76-14.9 161.2 0C246.3 67.8 293 47.8 375 55V-.4H0V53z"
+  />
+</svg>
