@@ -10,7 +10,7 @@
   --border-light: hsl(210, 15%, 89%);
   --border-dark: hsl(213, 19%, 55%);
 
-  --ff-sans: 'Open Sans', sans-serif;
+  --ff-sans: "Open Sans", sans-serif;
   --ff-serif: serif;
 }
 
@@ -42,7 +42,7 @@ ol[class] li {
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 img {
