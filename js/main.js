@@ -5,6 +5,10 @@ const main = document.querySelector("main");
 
 addHeading2("Your Code Buddy for Today:");
 
+// randomize order within a team //
+import { shakeArray } from "./randomize";
+teams[0] = shakeArray(teams[0]);
+
 createBuddies(teams[0]);
 
 addHeading2("Your current team:");

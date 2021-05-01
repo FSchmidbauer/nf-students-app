@@ -8,10 +8,6 @@ header.appendChild(currentDate);
 import { createBuddies, createTeam } from "./buddies_n_teams";
 import { teams } from "./teams";
 
-// randomize order within a team //
-import { shakeArray } from "./randomize";
-teams[0] = shakeArray(teams[0]);
-
 for (let i = 0; i < 4; i++) {
   const teamA = [teams[i][0], teams[i][1]];
   const teamB = [teams[i][2], teams[i][3]];
