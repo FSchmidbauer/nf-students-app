@@ -1,3 +1,6 @@
+const localJournalCard = loadFromLocalStorage() || {};
+console.log(localJournalCard);
+
 const starsSection = document.querySelector(".form__stars");
 
 for (let i = 0; i < 5; i++) {
@@ -20,7 +23,7 @@ for (let i = 0; i < 5; i++) {
 }
 const stars = starsSection.querySelectorAll("svg");
 
-makeRateable(stars);
+makeRateable(stars, "filled__stars", localJournalCard.rating);
 
 //rectangles
 const rectanglesSection = document.querySelector(".form__rectangles");
@@ -50,17 +53,66 @@ for (let i = 0; i < 10; i++) {
 }
 
 const rectangles = rectanglesSection.querySelectorAll("svg");
-makeRateable(rectangles);
+makeRateable(rectangles, "filled__rectangles", localJournalCard.comprehension);
 
-function makeRateable(svgs) {
+function makeRateable(svgs, shape, rating = 0) {
   svgs.forEach((svg, index) => {
+    for (let j = 0; j < rating; j++) {
+      svgs[j].classList.add(shape);
+    }
     svg.addEventListener("click", () => {
       for (let i = 0; i <= index; i++) {
-        svgs[i].classList.add("filled");
+        svgs[i].classList.add(shape);
       }
       for (let i = index + 1; i < svgs.length; i++) {
-        svgs[i].classList.remove("filled");
+        svgs[i].classList.remove(shape);
       }
     });
   });
+}
+
+const entries = loadFromLocalStorage() || {};
+const form = document.querySelector(".form");
+
+const inputMotto = document.querySelector("[name = input__motto]");
+inputMotto.innerText = localJournalCard.motto || "";
+
+const inputNotes = document.querySelector("[name = input__notes]");
+inputNotes.innerText = localJournalCard.notes || "";
+
+const submitButton = document.querySelector(".submit");
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  const filledStars = document.querySelectorAll(".filled__stars");
+  entries.rating = filledStars.length;
+  const filledRectangles = document.querySelectorAll(".filled__rectangles");
+  entries.comprehension = filledRectangles.length;
+  const inputMotto = document.querySelector("[name = input__motto]");
+  entries.motto = inputMotto.value;
+  const inputNotes = document.querySelector("[name = input__notes]");
+  entries.notes = inputNotes.value;
+  localStorage.setItem("Journalcard", JSON.stringify(entries));
+  form.reset();
+  const makeEmptyShapes = document.querySelectorAll(
+    ".filled__stars, .filled__rectangles"
+  );
+  makeEmptyShapes.forEach((shape) => {
+    shape.classList.remove("filled__stars", "filled__rectangles");
+  });
+  /*postJournalEntry(entries);*/
+});
+
+function postJournalEntry(entry) {
+  fetch("https://muc-2020-w1-student-api.vercel.app/api/journals", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(entry),
+  })
+    .then((res) => res.json())
+    .then((entries) => console.log(entries));
+}
+
+function loadFromLocalStorage() {
+  const JournalCard = JSON.parse(localStorage.getItem("Journalcard"));
+  return JournalCard;
 }

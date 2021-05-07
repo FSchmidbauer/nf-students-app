@@ -139,6 +139,10 @@ h3 {
   line-height: 1.429;
 }
 
-.filled {
+.filled__stars {
+  fill: var(--primary-dark);
+}
+
+.filled__rectangles {
   fill: var(--primary-dark);
 }
